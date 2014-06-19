@@ -8,3 +8,10 @@ wins = {
     wimbledon: ["1976", "1977", "1978", "1979", "1980"]
   }
 }
+
+tourney_wins = wins[:tournament_wins]
+
+BJORN_BORG["tournament_wins"] = tourney_wins
+
+puts BJORN_BORG["tournament_wins"][:wimbledon][0]
+puts BJORN_BORG["tournament_wins"][:wimbledon][-1]
